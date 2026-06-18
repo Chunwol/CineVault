@@ -1,0 +1,102 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.count {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+/* 정렬 버튼 */
+.sortButtons {
+  display: flex;
+  gap: 0.4rem;
+  align-self: center;
+}
+
+.sortButton {
+  padding: 0.4rem 0.9rem;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-secondary);
+  font-size: 0.84rem;
+  font-family: inherit;
+  box-shadow: var(--color-shadow);
+  transition: all 0.15s;
+}
+
+.sortButton:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.activeSort {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+}
+
+/* 장르 필터 */
+.genreFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filterButton {
+  padding: 0.4rem 0.9rem;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-text-secondary);
+  font-size: 0.84rem;
+  font-family: inherit;
+  box-shadow: var(--color-shadow);
+  transition: all 0.15s;
+}
+
+.filterButton:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.activeFilter {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.25rem;
+}
+
+.empty {
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: 5rem;
+  line-height: 1.7;
+}

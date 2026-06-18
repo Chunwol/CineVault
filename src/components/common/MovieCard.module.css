@@ -1,0 +1,176 @@
+.card {
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--color-shadow);
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--color-shadow-md);
+}
+
+.posterLink {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* 찜 버튼 */
+.wishBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  color: #c0c5d0;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.wishBtn:hover {
+  background: #fff;
+  color: #e94560;
+  transform: scale(1.1);
+}
+
+.wishlisted {
+  background: #fff;
+  color: #e94560;
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.posterLink:hover .overlay {
+  opacity: 1;
+}
+
+.viewDetail {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+}
+
+.info {
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.releaseYear {
+  font-size: 0.76rem;
+  color: var(--color-text-secondary);
+}
+
+.tmdbRating {
+  font-size: 0.76rem;
+  color: var(--color-rating);
+  font-weight: 600;
+}
+
+.myRating {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.review {
+  font-size: 0.76rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  flex: 1;
+  padding: 0.38rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.76rem;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.editButton {
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+.editButton:hover {
+  background: var(--color-background);
+  color: var(--color-text);
+  border-color: #d1d5db;
+}
+
+.deleteButton {
+  background: rgba(99, 102, 241, 0.07);
+  color: var(--color-primary);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.deleteButton:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.4);
+}

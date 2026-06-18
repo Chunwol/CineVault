@@ -1,0 +1,46 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.count {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.25rem;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 6rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  color: #e5e7eb;
+  margin-bottom: 0.75rem;
+}
+
+.emptyHint {
+  font-size: 0.88rem;
+  color: #b0b8c8;
+  margin-top: 0.4rem;
+}
