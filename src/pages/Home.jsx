@@ -24,11 +24,11 @@ const HIDE_YEAR_TABS = new Set([VIEW_MODE.PAST]);
 
 const TABS = [
   { label: '현재 상영작',    mode: VIEW_MODE.NOW_PLAYING },
-  { label: '🏆 박스오피스', mode: VIEW_MODE.POPULAR },
-  { label: '🎬 개봉 예정',  mode: VIEW_MODE.UPCOMING },
-  { label: '⭐ 명작 컬렉션', mode: VIEW_MODE.TOP_RATED },
-  { label: '🎭 장르 탐색',  mode: VIEW_MODE.GENRE },
-  { label: '📅 이전 상영작', mode: VIEW_MODE.PAST },
+  { label: '박스오피스',     mode: VIEW_MODE.POPULAR },
+  { label: '개봉 예정',      mode: VIEW_MODE.UPCOMING },
+  { label: '명작 컬렉션',    mode: VIEW_MODE.TOP_RATED },
+  { label: '장르 탐색',      mode: VIEW_MODE.GENRE },
+  { label: '이전 상영작',    mode: VIEW_MODE.PAST },
 ];
 
 const PAST_YEARS = Array.from({ length: CURRENT_YEAR - 1999 }, (_, i) => CURRENT_YEAR - 1 - i);
@@ -149,7 +149,7 @@ function Home() {
             className={`${styles.filterBtn} ${isFilterOpen ? styles.filterBtnOpen : ''} ${activeFilterCount > 0 ? styles.filterBtnActive : ''}`}
             onClick={toggleFilter}
           >
-            <span>🎯 필터</span>
+            <span>필터</span>
             {activeFilterCount > 0 && (
               <span className={styles.filterBadge}>{activeFilterCount}</span>
             )}
@@ -159,7 +159,7 @@ function Home() {
             className={`${styles.regionToggle} ${isKoreanOnly ? styles.activeRegion : ''}`}
             onClick={handleKoreanToggle}
           >
-            🇰🇷 한국 개봉작만
+            한국 개봉작만
           </button>
         </div>
 
