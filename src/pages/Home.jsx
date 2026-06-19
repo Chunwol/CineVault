@@ -129,7 +129,6 @@ function Home() {
       <div className={styles.searchHero}>
         <div className={styles.searchRow}>
           <div className={styles.searchWrapper}>
-            <span className={styles.searchIcon}>🔍</span>
             <input
               type="text"
               className={styles.searchInput}
